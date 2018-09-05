@@ -49,7 +49,7 @@
     close: function () {
       overlay.style.display = 'none';
       card.style.display = 'none';
-      window.history.back();
+      // window.history.back();
       buttonClose.removeEventListener('click', onButtonClick);
       window.filter.listenChange();
     },
