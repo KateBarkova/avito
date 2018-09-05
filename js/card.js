@@ -49,7 +49,9 @@
     close: function () {
       overlay.style.display = 'none';
       card.style.display = 'none';
-      // window.history.back();
+      if (window.mainArray !== null) {
+        window.history.back();
+      }    
       buttonClose.removeEventListener('click', onButtonClick);
       window.filter.listenChange();
     },
