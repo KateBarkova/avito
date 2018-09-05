@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Интернет-магазин</title>
+  <link rel="stylesheet" href="./system-font.css">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+<main class="layout centered">
+  <section class="layout-main products-list">
+
+    <article class="products-list-item product">
+      <picture class="product-pic">
+        <a href="#" class="product-pic-number">10</a>
+        <img src="" width="120">
+      </picture>
+      <div class="product-description">
+        <button class="product-favorite">Добавить в избранное</button>
+        <h3 class="product-title"><a href="#">Квартира на Невском</a></h3>
+        <p class="product-price">8&thinsp;000&thinsp;000&nbsp;₽</p>
+        <p class="product-address">м.&nbsp;Купчино, улица Лётчика Иванова, 3</p>
+        <p class="product-date">три дня назад</p>
+      </div>
+    </article>
+
+    <article class="products-list-item product">
+      <picture class="product-pic">
+        <a href="#" class="product-pic-number">10</a>
+        <img src="" width="120">
+      </picture>
+      <div class="product-description">
+        <button class="product-favorite">Добавить в избранное</button>
+        <h3 class="product-title"><a href="#">Квартира на Невском</a></h3>
+        <p class="product-price">8&thinsp;000&thinsp;000&nbsp;₽</p>
+        <p class="product-address">м.&nbsp;Купчино, улица Лётчика Иванова, 3</p>
+        <p class="product-date">три дня назад</p>
+      </div>
+    </article>
+
+    <article class="products-list-item product">
+      <picture class="product-pic">
+        <a href="#" class="product-pic-number">10</a>
+        <img src="" width="120">
+      </picture>
+      <div class="product-description">
+        <button class="product-favorite">Добавить в избранное</button>
+        <h3 class="product-title"><a href="#">Квартира на Невском</a></h3>
+        <p class="product-price">8&thinsp;000&thinsp;000&nbsp;₽</p>
+        <p class="product-address">м.&nbsp;Купчино, улица Лётчика Иванова, 3</p>
+        <p class="product-date">три дня назад</p>
+      </div>
+    </article>
+
+    <article class="products-list-item product">
+      <picture class="product-pic">
+        <a href="#" class="product-pic-number">10</a>
+        <img src="" width="120">
+      </picture>
+      <div class="product-description">
+        <button class="product-favorite">Добавить в избранное</button>
+        <h3 class="product-title"><a href="#">Квартира на Невском</a></h3>
+        <p class="product-price">8&thinsp;000&thinsp;000&nbsp;₽</p>
+        <p class="product-address">м.&nbsp;Купчино, улица Лётчика Иванова, 3</p>
+        <p class="product-date">три дня назад</p>
+      </div>
+    </article>
+  </section>
+
+  <aside class="layout-sidebar">
+    <form class="products-filter">
+      <fieldset class="products-filter-group radiogroup products-filter-favorite">
+        <input type="checkbox" name="is-favorite" id="favorite">
+        <label class="radiogroup-item" for="favorite">Показывать избранные</label>
+      </fieldset>
+
+      <fieldset class="products-filter-group">
+        <label for="category">Категория</label><br>
+
+        <select name="category" id="category">
+          <option value="all">Все объявления</option>
+          <option value="auto">Авто</option>
+          <option value="immovable">Недвижимость</option>
+          <option value="laptops">Ноутбуки</option>
+          <option value="cameras">Фотоаппараты</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="products-filter-group radiogroup">
+        Сначала:
+
+        <input type="radio" name="sort" value="popular" id="sort-popular" checked>
+        <label class="radiogroup-item" for="sort-popular">популярные</label>
+
+        <input type="radio" name="sort" value="cheap-first" id="sort-cheap">
+        <label class="radiogroup-item" for="sort-cheap">дешевые</label>
+
+        <input type="radio" name="sort" value="expensive-first" id="sort-expensive">
+        <label class="radiogroup-item" for="sort-expensive">дорогие</label>
+      </fieldset>
+
+      <fieldset class="products-filter-group">
+        <label for="price-range">Максимальная цена</label><br>
+        <span class="price-range-min">1000</span>
+        <input type="range" name="price-range" min="1000" max="5000">
+        <span class="price-range-max">5000</span>
+      </fieldset>
+
+      <button class="products-filter-submit" type="submit">Показать</button>
+    </form>
+  </aside>
+</main>
+<div class="overlay">
+  <article class="details">
+    <button class="details-close">Закрыть</button>
+
+    <h2 class="details-title">Квартира на Невском</h2>
+
+    <section class="details-main">
+      <p class="details-date">три дня назад</p>
+      <p class="details-price">8&thinsp;000&thinsp;000&nbsp;₽</p>
+
+      <section class="details-gallery">
+        <img src="" alt="" class="details-gallery-preview">
+        <div class="details-gallery-thumbnails">
+          <img src="" alt="" class="details-gallery-item">
+          <img src="" alt="" class="details-gallery-item">
+          <img src="" alt="" class="details-gallery-item">
+          <img src="" alt="" class="details-gallery-item">
+        </div>
+      </section>
+
+      <p class="details-description">Просторная трехкомнатная квартира. Окна на восток. 15 минут пешком до метро. В собственности более трех лет. Согласованная перепланировка. Подходит под ипотеку</p>
+    </section>
+
+    <aside class="details-aside">
+      <section class="details-address">
+        <p class="details-address-text">м.&nbsp;Купчино, улица Лётчика Иванова, 3</p>
+        <div class="details-address-map"></div>
+      </section>
+
+      <section class="details-seller">
+        <a href="#" class="details-seller-link">
+          <h3 class="details-seller-name">Агентство недвижимости «Купчино»</h3>
+        </a>
+
+        <p class="details-seller-rating details-seller-rating-good">
+          рейтинг <span class="details-seller-rating-val">4.3</span>
+          <a href="#">Отзывы</a>
+        </p>
+      </section>
+    </aside>
+  </article>
+</div>
+<script src="js/moment.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/get-map.js"></script>
+<script src="js/get-address.js"></script>
+<script src="js/backend.js"></script>
+<script src="js/favorite.js"></script>
+<script src="js/render-products.js"></script>
+<script src="js/card.js"></script>
+<script src="js/additional-filter.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/form-disabled.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/active-state.js"></script>
+</body>
+</html>
